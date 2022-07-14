@@ -16,9 +16,10 @@ class FillOutlineButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
+      elevation: isFilled ? 2 : 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30),
-        side: BorderSide(color: Colors.white),
+        side: const BorderSide(color: Colors.white),
       ),
       color: isFilled ? Colors.white : Colors.transparent,
       onPressed: press,
