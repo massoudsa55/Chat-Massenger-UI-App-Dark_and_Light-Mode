@@ -13,6 +13,20 @@ class Chat {
 
 List chatsData = [
   Chat(
+    name: "Messaoud Benkouider",
+    lastMessage: "السلام عليكم",
+    image: "assets/images/my_img.jpg",
+    time: "3m ago",
+    isActive: false,
+  ),
+  Chat(
+    name: "Benkouider Messaoud",
+    lastMessage: "اللى اللقاء ..",
+    image: "assets/images/my_photo.jpg",
+    time: "8m ago",
+    isActive: true,
+  ),
+  Chat(
     name: "Jenny Wilson",
     lastMessage: "Hope you are doing well...",
     image: "assets/images/user.png",

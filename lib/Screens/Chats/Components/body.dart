@@ -1,5 +1,6 @@
 import 'package:chat_massenger_ui_app/Components/filled_outline_button.dart';
 import 'package:chat_massenger_ui_app/Models/chat.dart';
+import 'package:chat_massenger_ui_app/Screens/Messages/message_screen.dart';
 import 'package:chat_massenger_ui_app/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -32,7 +33,12 @@ class Body extends StatelessWidget {
             itemCount: chatsData.length,
             itemBuilder: (context, index) => ChatCard(
               chat: chatsData[index],
-              press: () {},
+              press: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        MessagesScreen(chat: chatsData[index]),
+                  )),
             ),
           ),
         ),
