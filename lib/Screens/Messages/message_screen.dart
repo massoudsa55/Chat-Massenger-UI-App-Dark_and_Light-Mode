@@ -1,4 +1,5 @@
 import 'package:chat_massenger_ui_app/Models/chat.dart';
+import 'package:chat_massenger_ui_app/Screens/Messages/Components/body.dart';
 import 'package:chat_massenger_ui_app/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,7 @@ class MessagesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(context),
+      body: const Body(),
     );
   }
 
@@ -62,7 +64,7 @@ class MessagesScreen extends StatelessWidget {
                 opacity: 0.64,
                 child: Text(
                   chat.isActive ? "online" : chat.time,
-                  style: TextStyle(fontSize: 14),
+                  style: const TextStyle(fontSize: 14),
                 ),
               ),
             ],
@@ -70,8 +72,8 @@ class MessagesScreen extends StatelessWidget {
         ],
       ),
       actions: [
-        IconButton(onPressed: () {}, icon: Icon(Icons.call)),
-        IconButton(onPressed: () {}, icon: Icon(Icons.video_call)),
+        IconButton(onPressed: () {}, icon: const Icon(Icons.call)),
+        IconButton(onPressed: () {}, icon: const Icon(Icons.videocam)),
       ],
     );
   }
