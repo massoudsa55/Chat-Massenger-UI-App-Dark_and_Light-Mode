@@ -46,7 +46,7 @@ Screenshots
 
 ***
 
-...
+---
 
 ## For Getting Started with flutter 
 
